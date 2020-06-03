@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-26 10:10:09 "/>
+        <attribute name="created" value="VGhpYWdvO0RFU0tUT1AtVlRTMDJPMjsyMDIwLTA1LTI1OyIxMTowMzo1NCAiOzI4NTI="/>
+        <attribute name="edited" value="VGhpYWdvO0RFU0tUT1AtVlRTMDJPMjsyMDIwLTA1LTI2OyIxMDoxMDowOSAiOzI7Mjk1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, total" type="Integer" array="False" size=""/>
+            <declare name="vendedor" type="String" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o nome do Vendedor:&quot;" newline="True"/>
+            <input variable="vendedor"/>
+            <output expression="&quot;Digite o n&#250;mero de vendas do m&#234;s de Janeiro do vendedor &quot; &amp; vendedor &amp; &quot;:&quot;" newline="True"/>
+            <input variable="janeiro"/>
+            <output expression="&quot;Digite o n&#250;mero de vendas do m&#234;s de Fevereiro do vendedor &quot; &amp; vendedor &amp; &quot;:&quot;" newline="True"/>
+            <input variable="fevereiro"/>
+            <output expression="&quot;Digite o n&#250;mero de vendas do m&#234;s de Mar&#231;o do vendedor &quot; &amp; vendedor &amp; &quot;:&quot;" newline="True"/>
+            <input variable="marco"/>
+            <output expression="&quot;Digite o n&#250;mero de vendas do m&#234;s de Abril do vendedor &quot; &amp; vendedor &amp; &quot;:&quot;" newline="True"/>
+            <input variable="abril"/>
+            <assign variable="total" expression="janeiro+fevereiro+marco+abril"/>
+            <output expression="&quot;Total de vendas do vendador &quot; &amp; vendedor &amp; &quot; entre os meses de Janeiro e Abril: &quot; &amp; total" newline="True"/>
+            <assign variable="media" expression="total/4"/>
+            <output expression="&quot;M&#233;dia de vendas do vendador &quot; &amp; vendedor &amp; &quot; entre os meses de Janeiro e Abril: &quot; &amp; media" newline="True"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, vendedor &quot; &amp; vendedor &amp; &quot;, voc&#234; receber&#225; um abono de 10%!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Parab&#233;ns, vendedor &quot; &amp; vendedor &amp; &quot;, voc&#234; receber&#225; um abono de 03%!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

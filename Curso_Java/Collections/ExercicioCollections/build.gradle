@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+description = 'Exercícios do Curso de Collections com Java'
+    group = 'br.com.cursos.dio'
+
+mainClassName = 'br.com.cursos.dio.ExercicioCollections.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+}
